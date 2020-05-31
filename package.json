@@ -1,0 +1,22 @@
+{
+  "name": "learn_vuejs",
+  "version": "1.0.0",
+  "description": "learn_vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seniya/learn_vuejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seniya/learn_vuejs/issues"
+  },
+  "homepage": "https://github.com/seniya/learn_vuejs#readme",
+  "dependencies": {
+    "@vue/cli": "^4.4.1"
+  }
+}

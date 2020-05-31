@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My first Vue app</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="root">
+    <word-relay start-word="안녕"></word-relay>
+    <word-relay start-word="하세요"></word-relay>
+    <word-relay start-word="바보"></word-relay>
+  </div>
+
+</body>
+
+<script>
+  Vue.component('word-relay', {
+    template: `
+    <div>
+      <div>{{word}}</div>
+      <form v-on:submit="onSubmitForm">
+        <input type="text" ref="answer" v-model="value">
+        <button type="submit">입력!</button>
+      </form>
+      <div>{{result}}</div>
+    </div>
+    `,
+    props: ['start-word'],
+
+    data() {
+      console.log(this);
+      return {
+        word: this.startWord,
+        result: '',
+        value: '',
+      }
+    },
+    methods: {
+      onSubmitForm(e) {
+        e.preventDefault();
+
+        if (this.word[this.word.length - 1] === this.value[0]) {
+          this.result = '딩동댕';
+          this.word = this.value;
+        } else {
+          this.result = '땡';
+        }
+        this.$refs.answer.focus();
+      }
+    }
+  })
+
+</script>
+
+<script>
+  const app = new Vue({
+    el: '#root',
+  });
+</script>
+
+</html>
