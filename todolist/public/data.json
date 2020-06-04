@@ -1,0 +1,34 @@
+{
+  "todoList": [
+    {
+      "id": 0,
+      "title": "test",
+      "status": "active"
+    },
+    {
+      "id": 1,
+      "title": "cvbcvf rer2",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "title": "tdsfasf est",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "title": "testa adsf",
+      "status": "clear"
+    },
+    {
+      "id": 4,
+      "title": "test3 3ss",
+      "status": "clear"
+    },
+    {
+      "id": 5,
+      "title": " fdf",
+      "status": "active"
+    }
+  ]
+}
